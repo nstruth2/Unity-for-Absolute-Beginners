@@ -44,8 +44,6 @@ public class DemoControl : MonoBehaviour
 		
 		switch (Application.platform)
 		{
-			case RuntimePlatform.OSXWebPlayer:
-			case RuntimePlatform.WindowsWebPlayer:
 			case RuntimePlatform.NaCl:
 				fullScreenAvailable = true;
 				quitEnabled = false;

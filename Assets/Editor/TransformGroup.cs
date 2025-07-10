@@ -8,7 +8,7 @@ public class TransformGroup : ScriptableObject
     static void MenuInsertParent()
     {
         Transform[] transforms = Selection.GetTransforms(SelectionMode.TopLevel |
-            SelectionMode.OnlyUserModifiable);
+            SelectionMode.Editable);
 
         GameObject newParent = new GameObject("_New Group");
         Transform newParentTransform = newParent.transform;
